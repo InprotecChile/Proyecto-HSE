@@ -1,6 +1,13 @@
-$background-color: #094970;
-$font-color: #ffffff;
-
 nav {
-    background-color: $background-color;
+    background-color: #094970;
+}
+
+.navbar-nav a {
+    color: white;
+    text-decoration: none;
+}    
+
+.active-link{
+    background-color:#3287EC;
+    border-radius: 5px;
 }
