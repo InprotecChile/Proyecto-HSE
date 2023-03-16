@@ -74,15 +74,14 @@ const Login = () => {
                       ) : null}
                     </div>
                   </div>
+                  <div className="d-flex justify-content-center m-3">
+                    <input
+                      type="submit"
+                      value="Iniciar Sesión"
+                      className="btn btn-primary btn-block text-white"
+                    />
+                  </div>
                 </form>
-              </div>
-
-              <div className="d-flex justify-content-center m-3">
-                <input
-                  type="submit"
-                  value="Iniciar Sesión"
-                  className="btn btn-primary btn-block text-white"
-                />
               </div>
             </div>
           </div>
