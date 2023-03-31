@@ -7,7 +7,19 @@ const pool = require("./db");
 app.use(cors());
 app.use(express.json());
 
-app.listen(5000, () =>{
-    console.log("servidor iniciado en el puerto 5000");
+// Routes
+const routeProyectos = require("./routes/proyectos");
+app.use("/routes/proyectos", routeProyectos);
+
+
+
+app.get("/", (req, res) => {
+    res.send("index");
+})
+
+const PUERTO = process.env.PORT || 5000
+
+app.listen(PUERTO, () =>{
+    console.log(`servidor iniciado en el puerto ${PUERTO}...`);
 });
 
